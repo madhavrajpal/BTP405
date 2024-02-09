@@ -8,7 +8,7 @@ def authorize(func):
         elif profiles[args[0]] !=  args[1]:
             print("wrong password")
         else: 
-            print("authorization succesfull")
+            func(args[0],args[1])
 
     return authorizing_func
 

@@ -3,6 +3,7 @@ import time
 def timer(func):
     def wrapper():
         start_time = time.time()
+        result = func()
         end_time = time.time()
         duration = end_time - start_time
         print(f"Function '{func.__name__}' took {duration:.6f} seconds to execute.")
